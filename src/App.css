@@ -1,0 +1,37 @@
+/* Estilo global para el cuerpo de la página */
+body {
+  font-family: 'Roboto', sans-serif; /* Fuente para todo el texto */
+  background-color: #f0f0f0; /* Color de fondo claro y neutro */
+  margin: 0; /* Elimina el margen por defecto */
+  padding: 0; /* Elimina el padding por defecto */
+}
+
+/* Estilo para el contenedor principal de la aplicación */
+.App {
+  display: flex; /* Usa flexbox para el diseño */
+  flex-direction: column; /* Organiza los elementos en una columna */
+  min-height: 100vh; /* Asegúrate de que el contenedor tenga al menos la altura del viewport */
+}
+
+/* Colores de texto para los encabezados */
+h1, h2, h3, h4, h5, h6 {
+  color: #333; /* Color oscuro y neutro para una buena legibilidad */
+}
+
+/* Color del texto para los párrafos */
+p {
+  color: #000000; /* Color gris medio para párrafos, más suave pero aún legible */
+}
+
+/* Estilo para el componente Paper de Material-UI */
+.MuiPaper-root {
+  padding: 2rem; /* Espaciado interno para el contenido */
+  border-radius: 8px; /* Bordes redondeados sutiles */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra más profunda y sutil para mayor profundidad */
+}
+
+/* Estilo para el componente Avatar de Material-UI */
+.MuiAvatar-root {
+  background-color: #007bff; /* Color de fondo profesional y moderno */
+  color: #fff; /* Color blanco para el texto en el avatar */
+}
