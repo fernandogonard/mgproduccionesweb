@@ -3,14 +3,22 @@ import React from 'react';
 import { Container, Typography, Box, Paper } from '@mui/material';
 import { motion } from 'framer-motion';
 
-// Ruta de las imágenes
+// Importar las imágenes
+import reactImage from '../assets/react.png';
+import jsImage from '../assets/JavaScript-logo.png';
+import cssImage from '../assets/css.png';
+import htmlImage from '../assets/html.png';
+import nodeImage from '../assets/nodejs.png';
+import mongoImage from '../assets/mongo.png';
+
+// Mapa de imágenes tecnológicas
 const technologyImages = {
-  React: './src/assets/react.png',
-  JavaScript: 'src/assets/JavaScript-logo.png',
-  CSS: 'src/assets/css.png',
-  HTML: 'src/assets/html.png',
-  'Node.js': 'src/assets/nodejs.png',
-  'Mongo dv': 'src/assets/mongo.png'
+  React: reactImage,
+  JavaScript: jsImage,
+  CSS: cssImage,
+  HTML: htmlImage,
+  'Node.js': nodeImage,
+  'MongoDB': mongoImage
 };
 
 const TechnologyItem = ({ name }) => (

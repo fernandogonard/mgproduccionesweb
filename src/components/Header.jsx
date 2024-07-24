@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { AppBar, Toolbar, Button, Box, useMediaQuery, useTheme, IconButton, Drawer, List, ListItem, ListItemText } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-import logoDesktop from '../assets/aa.png';
-import logoMobile from '../assets/mg.png';
+import logoDesktop from '../assets/golden.png';
+import logoMobile from '../assets/golden.png';
 
 const Header = () => {
   const theme = useTheme();

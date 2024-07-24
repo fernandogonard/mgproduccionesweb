@@ -6,6 +6,8 @@ import VerifiedIcon from '@mui/icons-material/Verified';
 import { styled } from '@mui/system';
 import { motion } from 'framer-motion';
 
+const iconColor = 'primary.main';
+
 const FeatureCard = styled(Paper)(({ theme }) => ({
   padding: theme.spacing(4),
   textAlign: 'center',
@@ -23,11 +25,11 @@ const FeatureIcon = styled(Avatar)(({ theme }) => ({
   height: 80,
   margin: '0 auto',
   backgroundColor: theme.palette.primary.main,
-  color: theme.palette.primary.contrastText,
+  color: theme.palette.primary.contrastText, // Ajusta el color del texto (íconos) aquí
 }));
 
 const SummarySection = styled(Box)(({ theme }) => ({
-  textAlign: 'left', // Cambiado a 'left' para alinear el texto a la izquierda
+  textAlign: 'left',
   backgroundColor: theme.palette.background.paper,
   borderRadius: theme.spacing(2),
   padding: theme.spacing(4),
@@ -35,7 +37,7 @@ const SummarySection = styled(Box)(({ theme }) => ({
   marginTop: theme.spacing(6),
   display: 'flex',
   flexDirection: 'column',
-  alignItems: 'flex-start', // Cambiado a 'flex-start' para alinear el contenido a la izquierda
+  alignItems: 'flex-start',
   [theme.breakpoints.up('md')]: {
     textAlign: 'center',
     alignItems: 'center',
@@ -72,7 +74,7 @@ const WhyChooseUs = () => (
         >
           <FeatureCard elevation={3}>
             <FeatureIcon>
-              <VisibilityIcon sx={{ fontSize: 40 }} />
+              <VisibilityIcon sx={{ fontSize: 40, color: 'inherit' }} />
             </FeatureIcon>
             <Typography variant="h5" gutterBottom mt={2}>
               Aumentar su Visibilidad
@@ -90,8 +92,8 @@ const WhyChooseUs = () => (
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <FeatureCard elevation={3}>
-            <FeatureIcon sx={{ bgcolor: 'secondary.main' }}>
-              <MonetizationOnIcon sx={{ fontSize: 40 }} />
+            <FeatureIcon>
+              <MonetizationOnIcon sx={{ fontSize: 40, color: 'inherit' }} />
             </FeatureIcon>
             <Typography variant="h5" gutterBottom mt={2}>
               Generar Más Ventas
@@ -109,8 +111,8 @@ const WhyChooseUs = () => (
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           <FeatureCard elevation={3}>
-            <FeatureIcon sx={{ bgcolor: 'success.main' }}>
-              <VerifiedIcon sx={{ fontSize: 40 }} />
+            <FeatureIcon>
+              <VerifiedIcon sx={{ fontSize: 40, color: 'inherit' }} />
             </FeatureIcon>
             <Typography variant="h5" gutterBottom mt={2}>
               Construir Credibilidad
@@ -129,7 +131,7 @@ const WhyChooseUs = () => (
       <Typography variant="body1" paragraph>
         Un sitio web bien diseñado no es solo una inversión, es la clave para desbloquear el potencial completo de su negocio. Permítanos ser su socio en la creación de una presencia en línea que impulse su éxito.
       </Typography>
-      <Box textAlign="left" mt={4}> {/* Cambiado a 'left' para alinear el contenido a la izquierda */}
+      <Box textAlign="left" mt={4}>
         <Typography variant="h5" gutterBottom>
           Aquí están las razones para elegirnos:
         </Typography>

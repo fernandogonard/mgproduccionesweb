@@ -24,11 +24,6 @@ p {
 }
 
 /* Estilo para el componente Paper de Material-UI */
-.MuiPaper-root {
-  padding: 2rem; /* Espaciado interno para el contenido */
-  border-radius: 8px; /* Bordes redondeados sutiles */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra más profunda y sutil para mayor profundidad */
-}
 
 /* Estilo para el componente Avatar de Material-UI */
 .MuiAvatar-root {

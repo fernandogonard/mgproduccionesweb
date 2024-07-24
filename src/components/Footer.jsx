@@ -2,18 +2,18 @@ import React from 'react';
 import { Box, Container, Grid, Typography, Link, IconButton } from '@mui/material';
 import { Facebook, Twitter, Instagram, LinkedIn, Email } from '@mui/icons-material';
 
-// Paleta de colores azul
+// Nueva paleta de colores
 const blueColors = {
-  50: '#e3f2fd',
-  100: '#bbdefb',
-  200: '#90caf9',
-  300: '#64b5f6',
-  400: '#42a5f5',
-  500: '#2196f3',
-  600: '#1e88e5',
-  700: '#1976d2',
-  800: '#1565c0',
-  900: '#0d47a1',
+  50: '#f8f4e3',  // Blanco
+  100: '#e9d8a6',
+  200: '#d8b74a',
+  300: '#c2a13e',
+  400: '#a97b2c',
+  500: '#8c5e2f',
+  600: '#7b4e2f',
+  700: '#6a3d28',
+  800: '#5a2d1f',
+  900: '#3e1b11',
 };
 
 const Footer = () => {
@@ -22,7 +22,7 @@ const Footer = () => {
       component="footer"
       sx={{
         backgroundColor: blueColors[600], // Fondo oscuro azul
-        color: blueColors[50], // Texto claro
+        color: blueColors[50], // Texto blanco
         py: 6, // Mayor espacio vertical
         mt: 'auto',
         borderTop: `1px solid ${blueColors[700]}`, // Borde superior azul más claro
@@ -31,23 +31,23 @@ const Footer = () => {
       <Container maxWidth="lg">
         <Grid container spacing={4}>
           <Grid item xs={12} md={4}>
-            <Typography variant="h6" gutterBottom>
+            <Typography variant="h6" gutterBottom sx={{ color: blueColors[50] }}>
               Contacto
             </Typography>
-            <Typography variant="body1" paragraph>
-              Dirección: 123 Calle Principal, Ciudad, País
+            <Typography variant="body1" paragraph sx={{ color: blueColors[50] }}>
+              Dirección: Mar del Plata, Argentina
             </Typography>
-            <Typography variant="body1" paragraph>
-              Teléfono: (123) 456-7890
+            <Typography variant="body1" paragraph sx={{ color: blueColors[50] }}>
+              Teléfono: +54 9(223)5203369
             </Typography>
             <Typography variant="body1">
               <Link href="mailto:contacto@tusitio.com" color={blueColors[50]} underline="hover">
-                Email: contacto@tusitio.com
+                Email: matiasgonard1@gmail.com
               </Link>
             </Typography>
           </Grid>
           <Grid item xs={12} md={4}>
-            <Typography variant="h6" gutterBottom>
+            <Typography variant="h6" gutterBottom sx={{ color: blueColors[50] }}>
               Enlaces Rápidos
             </Typography>
             <ul style={{ listStyle: 'none', padding: 0 }}>
@@ -74,7 +74,7 @@ const Footer = () => {
             </ul>
           </Grid>
           <Grid item xs={12} md={4}>
-            <Typography variant="h6" gutterBottom>
+            <Typography variant="h6" gutterBottom sx={{ color: blueColors[50] }}>
               Síguenos
             </Typography>
             <Box sx={{ display: 'flex', gap: 2 }}>
@@ -158,7 +158,7 @@ const Footer = () => {
         </Grid>
         <Box mt={4} textAlign="center">
           <Typography variant="body1" color={blueColors[50]}>
-            © {new Date().getFullYear()} Tu Sitio Web. Todos los derechos reservados.
+            © {new Date().getFullYear()} Soluciones Web. Todos los derechos reservados.
           </Typography>
         </Box>
       </Container>
