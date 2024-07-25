@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Typography, TextField, Button, Box } from '@mui/material';
 
 const ContactForm = () => (
-  <Container maxWidth="lg" sx={{ mt: 10, mb: 6 }} id="contact"> {/* Aumentar mt y agregar mb */}
+  <Container maxWidth="lg" sx={{ mt: 10, mb: 6 }} id="contact">
     <Typography variant="h4" align="center" gutterBottom>
       Contáctenos
     </Typography>

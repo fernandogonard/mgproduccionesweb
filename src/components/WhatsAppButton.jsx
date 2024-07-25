@@ -14,7 +14,7 @@ const WhatsAppButton = () => (
     <Fab
       color="primary"
       aria-label="WhatsApp"
-      href="https://wa.me/[tu-numero-de-telefono]"
+      href="https://wa.me/+5492235203369?text=Hola%2C%20me%20interesa%20su%20servicio.%20%3A)"
       target="_blank"
     >
       <WhatsAppIcon />

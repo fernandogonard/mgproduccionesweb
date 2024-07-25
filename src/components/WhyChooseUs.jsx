@@ -62,7 +62,7 @@ const WhyChooseUs = () => (
         ¿Por Qué Elegirnos?
       </Typography>
       <Typography variant="body1" paragraph>
-        En [Nombre de tu Empresa], entendemos que un sitio web es más que una simple página en internet; es una herramienta poderosa para el crecimiento y éxito de su negocio. Nuestro equipo de expertos combina creatividad, tecnología y estrategia para ofrecer soluciones personalizadas que cumplen con sus objetivos específicos.
+        En MG Soluciones web, entendemos que un sitio web es más que una simple página en internet; es una herramienta poderosa para el crecimiento y éxito de su negocio. Nuestro equipo de expertos combina creatividad, tecnología y estrategia para ofrecer soluciones personalizadas que cumplen con sus objetivos específicos.
       </Typography>
     </Box>
     <Grid container spacing={4}>

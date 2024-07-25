@@ -8,7 +8,7 @@ const AboutUsPaper = styled(Paper)(({ theme }) => ({
   borderRadius: theme.spacing(2),
   boxShadow: theme.shadows[3],
   transition: 'transform 0.3s, box-shadow 0.3s',
-  backgroundColor: theme.palette.background.paper, // Color de fondo para Paper
+  backgroundColor: theme.palette.background.paper,
   '&:hover': {
     transform: 'scale(1.02)',
     boxShadow: theme.shadows[6],
@@ -16,7 +16,7 @@ const AboutUsPaper = styled(Paper)(({ theme }) => ({
 }));
 
 const AboutUs = () => (
-  <Container maxWidth="lg" sx={{ mt: 5 }}>
+  <Container id="about" maxWidth="lg" sx={{ mt: 5 }}>
     <Typography variant="h4" align="center" gutterBottom>
       Sobre Nosotros
     </Typography>

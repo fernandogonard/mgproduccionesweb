@@ -2,9 +2,8 @@ import React from 'react';
 import { Box, Container, Grid, Typography, Link, IconButton } from '@mui/material';
 import { Facebook, Twitter, Instagram, LinkedIn, Email } from '@mui/icons-material';
 
-// Nueva paleta de colores
 const blueColors = {
-  50: '#f8f4e3',  // Blanco
+  50: '#f8f4e3',
   100: '#e9d8a6',
   200: '#d8b74a',
   300: '#c2a13e',
@@ -21,11 +20,11 @@ const Footer = () => {
     <Box
       component="footer"
       sx={{
-        backgroundColor: blueColors[600], // Fondo oscuro azul
-        color: blueColors[50], // Texto blanco
-        py: 6, // Mayor espacio vertical
+        backgroundColor: blueColors[600],
+        color: blueColors[50],
+        py: 6,
         mt: 'auto',
-        borderTop: `1px solid ${blueColors[700]}`, // Borde superior azul más claro
+        borderTop: `1px solid ${blueColors[700]}`,
       }}
     >
       <Container maxWidth="lg">
@@ -41,7 +40,7 @@ const Footer = () => {
               Teléfono: +54 9(223)5203369
             </Typography>
             <Typography variant="body1">
-              <Link href="mailto:contacto@tusitio.com" color={blueColors[50]} underline="hover">
+              <Link href="mailto:matiasgonard1@gmail.com" color={blueColors[50]} underline="hover">
                 Email: matiasgonard1@gmail.com
               </Link>
             </Typography>
@@ -52,22 +51,22 @@ const Footer = () => {
             </Typography>
             <ul style={{ listStyle: 'none', padding: 0 }}>
               <li>
-                <Link href="#" color={blueColors[50]} variant="body1" underline="hover">
+                <Link href="#home" color={blueColors[50]} variant="body1" underline="hover">
                   Inicio
                 </Link>
               </li>
               <li>
-                <Link href="#" color={blueColors[50]} variant="body1" underline="hover">
+                <Link href="#services" color={blueColors[50]} variant="body1" underline="hover">
                   Servicios
                 </Link>
               </li>
               <li>
-                <Link href="#" color={blueColors[50]} variant="body1" underline="hover">
+                <Link href="#about" color={blueColors[50]} variant="body1" underline="hover">
                   Sobre Nosotros
                 </Link>
               </li>
               <li>
-                <Link href="#" color={blueColors[50]} variant="body1" underline="hover">
+                <Link href="#contact" color={blueColors[50]} variant="body1" underline="hover">
                   Contacto
                 </Link>
               </li>
@@ -78,77 +77,77 @@ const Footer = () => {
               Síguenos
             </Typography>
             <Box sx={{ display: 'flex', gap: 2 }}>
-              <IconButton 
-                color="inherit" 
-                component="a" 
-                href="https://facebook.com" 
+              <IconButton
+                color="inherit"
+                component="a"
+                href="#"
                 aria-label="Facebook"
-                sx={{ 
+                sx={{
                   '&:hover': {
-                    color: blueColors[900], 
-                    transform: 'scale(1.2)', 
-                    transition: 'transform 0.3s, color 0.3s'
-                  } 
+                    color: blueColors[900],
+                    transform: 'scale(1.2)',
+                    transition: 'transform 0.3s, color 0.3s',
+                  },
                 }}
               >
                 <Facebook sx={{ fontSize: 30, color: blueColors[50] }} />
               </IconButton>
-              <IconButton 
-                color="inherit" 
-                component="a" 
-                href="https://twitter.com" 
+              <IconButton
+                color="inherit"
+                component="a"
+                href="#"
                 aria-label="Twitter"
-                sx={{ 
+                sx={{
                   '&:hover': {
-                    color: blueColors[900], 
-                    transform: 'scale(1.2)', 
-                    transition: 'transform 0.3s, color 0.3s'
-                  } 
+                    color: blueColors[900],
+                    transform: 'scale(1.2)',
+                    transition: 'transform 0.3s, color 0.3s',
+                  },
                 }}
               >
                 <Twitter sx={{ fontSize: 30, color: blueColors[50] }} />
               </IconButton>
-              <IconButton 
-                color="inherit" 
-                component="a" 
-                href="https://instagram.com" 
+              <IconButton
+                color="inherit"
+                component="a"
+                href="#"
                 aria-label="Instagram"
-                sx={{ 
+                sx={{
                   '&:hover': {
-                    color: blueColors[900], 
-                    transform: 'scale(1.2)', 
-                    transition: 'transform 0.3s, color 0.3s'
-                  } 
+                    color: blueColors[900],
+                    transform: 'scale(1.2)',
+                    transition: 'transform 0.3s, color 0.3s',
+                  },
                 }}
               >
                 <Instagram sx={{ fontSize: 30, color: blueColors[50] }} />
               </IconButton>
-              <IconButton 
-                color="inherit" 
-                component="a" 
-                href="https://linkedin.com" 
+              <IconButton
+                color="inherit"
+                component="a"
+                href="#"
                 aria-label="LinkedIn"
-                sx={{ 
+                sx={{
                   '&:hover': {
-                    color: blueColors[900], 
-                    transform: 'scale(1.2)', 
-                    transition: 'transform 0.3s, color 0.3s'
-                  } 
+                    color: blueColors[900],
+                    transform: 'scale(1.2)',
+                    transition: 'transform 0.3s, color 0.3s',
+                  },
                 }}
               >
                 <LinkedIn sx={{ fontSize: 30, color: blueColors[50] }} />
               </IconButton>
-              <IconButton 
-                color="inherit" 
-                component="a" 
-                href="mailto:contacto@tusitio.com" 
+              <IconButton
+                color="inherit"
+                component="a"
+                href="mailto:matiasgonard1@gmail.com"
                 aria-label="Email"
-                sx={{ 
+                sx={{
                   '&:hover': {
-                    color: blueColors[900], 
-                    transform: 'scale(1.2)', 
-                    transition: 'transform 0.3s, color 0.3s'
-                  } 
+                    color: blueColors[900],
+                    transform: 'scale(1.2)',
+                    transition: 'transform 0.3s, color 0.3s',
+                  },
                 }}
               >
                 <Email sx={{ fontSize: 30, color: blueColors[50] }} />

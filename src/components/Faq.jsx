@@ -1,4 +1,3 @@
-// FAQ.jsx
 import React, { useState } from 'react';
 import { Container, Typography, Accordion, AccordionSummary, AccordionDetails, IconButton, useTheme, useMediaQuery } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
@@ -34,7 +33,7 @@ const Faq = () => {
   };
 
   return (
-    <Container maxWidth="lg" sx={{ mt: 5 }}>
+    <Container id="faq" maxWidth="lg" sx={{ mt: 5 }}>
       <Typography variant="h4" align="center" gutterBottom>
         Preguntas Frecuentes
       </Typography>
@@ -86,7 +85,7 @@ const Faq = () => {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Sí, ofrecemos servicios de mantenimiento continuo para asegurar que su sitio web funcione correctamente y se mantenga actualizado.
+            Sí, ofrecemos servicios de mantenimiento continuo para asegurar que su sitio web se mantenga actualizado y funcionando correctamente.
           </Typography>
         </AccordionDetails>
       </StyledAccordion>
